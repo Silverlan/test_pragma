@@ -23,6 +23,11 @@ jobs:
           - os: ubuntu-24.04
             name: "Ubuntu 24.04"
     steps:
+      - name: Install libssl-dev
+        shell: bash
+        run: |
+          sudo apt-get install libssl-dev
+          
       - name: Setup Pragma
         uses: Silverlan/pragma/github_actions/setup@main
         with:
