@@ -258,7 +258,7 @@ if platform == "linux":
 			# Required for Curl
 			# This has to be executed before "apt update", otherwise
 			# it will cause the GitHub runner to restart
-			"apt-get install libssl-dev",
+			# "apt-get install libssl-dev",
 			
 			# Required for Pragma core
 			"apt install build-essential",
